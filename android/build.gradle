@@ -24,6 +24,16 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 28
     namespace ="com.iyaffle.launchreview"
+        compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
+        targetCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
+    }
+
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
