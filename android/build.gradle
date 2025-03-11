@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     namespace ="com.iyaffle.launchreview"
         compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
